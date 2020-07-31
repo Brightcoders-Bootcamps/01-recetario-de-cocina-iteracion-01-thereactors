@@ -4,51 +4,48 @@ import {Colors} from '../themes/colors';
 
 export default function trending() {
   return (
-    <View style={styles.mainContainer}>
-      <View style={styles.containerTrending}>
-        {/*This is a card*/}
-        <View style={styles.cardDish}>
-          <Image
-            source={require('./../assets/image/PancakeCups.jpg')}
-            style={styles.imgDish}
-          />
-          <Text style={styles.letter}>
-            ousahdoasdasodasdaosdho saidhjasodhoiashdohas
-          </Text>
-        </View>
-        {/*This is a card*/}
-        <View style={styles.cardDish}>
-          <Image
-            source={require('./../assets/image/PancakeCups.jpg')}
-            style={styles.imgDish}
-          />
-          <Text style={styles.letter}>
-            ousahdoasdasodasdaosdho saidhjasodhoiashdohas
-          </Text>
-        </View>
-        {/*This is a card*/}
-        <View style={styles.cardDish}>
-          <Image
-            source={require('./../assets/image/PancakeCups.jpg')}
-            style={styles.imgDish}
-          />
-          <Text style={styles.letter}>
-            ousahdoasdasodasdaosdho saidhjasodhoiashdohas
-          </Text>
-        </View>
+    <View style={styles.containerTrending}>
+      <View style={styles.cardDish}>
+        <Image
+          source={require('./../assets/image/PancakeCups.jpg')}
+          style={styles.imgDish}
+        />
+        <Text style={styles.letter}>
+          ousahdoasdasodasdaosdho saidhjasodhoiashdohas
+        </Text>
+      </View>
+      <View style={styles.cardDish}>
+        <Image
+          source={require('./../assets/image/PancakeCups.jpg')}
+          style={styles.imgDish}
+        />
+        <Text style={styles.letter}>
+          ousahdoasdasodasdaosdho saidhjasodhoiashdohas
+        </Text>
+      </View>
+      <View style={styles.cardDish}>
+        <Image
+          source={require('./../assets/image/PancakeCups.jpg')}
+          style={styles.imgDish}
+        />
+        <Text style={styles.letter}>
+          ousahdoasdasodasdaosdho saidhjasodhoiashdohas
+        </Text>
+      </View>
+      <View style={styles.cardDish}>
+        <Image
+          source={require('./../assets/image/PancakeCups.jpg')}
+          style={styles.imgDish}
+        />
+        <Text style={styles.letter}>
+          ousahdoasdasodasdaosdho saidhjasodhoiashdohas
+        </Text>
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  mainContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    alignContent: 'stretch',
-    marginVertical: 20,
-  },
   imgDish: {
     width: '100%',
     height: 115,
@@ -58,13 +55,14 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    alignContent: 'stretch',
-    marginVertical: 20,
+    alignContent: 'flex-start',
+    marginVertical: 15,
     marginHorizontal: 5,
   },
   cardDish: {
-    flex: 3,
+    width: '28%',
     marginHorizontal: 10,
+    marginVertical: 10,
   },
   letter: {
     color: Colors.white,
