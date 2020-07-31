@@ -36,12 +36,12 @@ export default function mainScreen() {
             style={styles.microIcon}
           />
         </View>
+        <Text style={styles.letters}>TRENDING</Text>
         {/* Container Trending Component */}
-        <Text style={styles.Trending}>TRENDING</Text>
-        <Trending></Trending>
+        <Trending />
+        <Text style={styles.letters}>RECENT</Text>
         {/* Container Recents Component */}
-        <Text style={styles.Recent}>RECENT</Text>
-        <Recent/>
+        <Recent />
       </ScrollView>
     </SafeAreaView>
   );
@@ -49,16 +49,11 @@ export default function mainScreen() {
 
 const styles = StyleSheet.create({
   mainContainer: {
-    //this is the first containes
     flex: 1,
-
     backgroundColor: Colors.backgroundScreen,
   },
-
   containerSearch: {
-    //
-    // width: '90%',
-    marginTop: 20,
+    marginVertical: 30,
     flex: 0.08,
     flexDirection: 'row',
     justifyContent: 'center',
@@ -72,34 +67,9 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
     color: Colors.white,
   },
-  // searchIcon: {
-  //   marginLeft: 20,
-  // },
-  // microIcon: {
-  //   marginRight: 20,
-  // },
-  containerTrending: {
-    //this is a containes
-    marginTop: 20,
-    flexDirection: 'row',
-    backgroundColor: 'white',
-  },
-  Trending: {
+  letters: {
     color: Colors.title,
     fontSize: 24,
-    marginTop: 25,
-    marginBottom: 10,
-  },
-  containerRecent: {
-    //this is a containes
-    marginTop: 20,
-    flexDirection: 'row',
-    backgroundColor: 'yellow',
-  },
-  Recent: {
-    color: Colors.title,
-    fontSize: 24,
-    marginTop: 25,
-    marginBottom: 10,
+    marginLeft: 15,
   },
 });
